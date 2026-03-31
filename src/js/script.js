@@ -49,31 +49,43 @@
 // console.log(exemplo9) // variavel vazia
 // //() = metodo {} = objeto [] = array 
 
-// Operadores aritimeticos 
-const valor1=20;
-const valor2=10;
+// // Operadores aritimeticos 
+// const valor1=20;
+// const valor2=10;
 
-console.log(valor1 + valor2 );
-console.log(valor1 / valor2 );
-console.log(valor1 - valor2 );
-console.log(valor1 * valor2 );
+// console.log(valor1 + valor2 );
+// console.log(valor1 / valor2 );
+// console.log(valor1 - valor2 );
+// console.log(valor1 * valor2 );
 
-// operadores lógicos 
-// < menor > maior = atribuir == comparar ==- =! diferente
-//  && e || ou 
+// // operadores lógicos 
+// // < menor > maior = atribuir == comparar ==- =! diferente
+// //  && e || ou 
 
-console.log(valor1<valor2);
-console.log(valor1>valor2);
-console.log(valor1 > 10 && valor2 != 20);
-console.log(valor2 < 5 || valor1 > 50);
+// console.log(valor1<valor2);
+// console.log(valor1>valor2);
+// console.log(valor1 > 10 && valor2 != 20);
+// console.log(valor2 < 5 || valor1 > 50);
 
-// operadores de comparação 
-console.log(valor1 < valor2);
-console.log(valor1 <= valor2);
-console.log(valor1 > valor2);
-console.log(valor1 >= valor2);
-console.log(valor1 != valor2);
-console.log(valor1 == valor2); // compara
-console.log(valor1 === valor2); // compara e olha o tipo da variavel 
-console.log("O valor é", valor2);
+// // operadores de comparação 
+// console.log(valor1 < valor2);
+// console.log(valor1 <= valor2);
+// console.log(valor1 > valor2);
+// console.log(valor1 >= valor2);
+// console.log(valor1 != valor2);
+// console.log(valor1 == valor2); // compara
+// console.log(valor1 === valor2); // compara e olha o tipo da variavel 
+// console.log("O valor é", valor2);
 
+// exercicio 1 
+const p = 20; //preço do produto 
+const v = 10; // preço do desconto 
+const precoFinal = p - v; 
+console.log("O preço final com desconto é: ", precoFinal)
+
+// exercicio 2 
+
+const usuarioLogado=1;
+const Token=100;
+const transacaoAutorizada= usuarioLogado === 1 && token >=10;
+console.log("Transação autorizada com sucesso", transacaoAutorizada);
