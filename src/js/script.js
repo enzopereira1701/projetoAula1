@@ -77,15 +77,82 @@
 // console.log(valor1 === valor2); // compara e olha o tipo da variavel 
 // console.log("O valor é", valor2);
 
-// exercicio 1 
-const p = 20; //preço do produto 
-const v = 10; // preço do desconto 
-const precoFinal = p - v; 
-console.log("O preço final com desconto é: ", precoFinal)
+// // exercicio 1 
+// const p = 20; //preço do produto 
+// const v = 10; // preço do desconto 
+// const precoFinal = p - v; 
+// console.log("O preço final com desconto é: ", precoFinal)
 
-// exercicio 2 
+// // exercicio 2 
 
-const usuarioLogado=1;
-const Token=100;
-const transacaoAutorizada= usuarioLogado === 1 && token >=10;
-console.log("Transação autorizada com sucesso", transacaoAutorizada);
+// const usuarioLogado=1;
+// const Token=100;
+// const transacaoAutorizada= usuarioLogado === 1 && Token >=10;
+// console.log("Transação autorizada com sucesso", transacaoAutorizada);
+
+// ESTRUTURA CONDICIONAL 
+
+// if
+if(true){
+  console.log("é verdadeiro")
+}
+
+//if else
+
+let nome = "Fiap"
+
+  if(nome=="Fiap"){
+    console.log("Nome verdadeiro")
+  }else{
+    console.log("Nome falso")
+  }
+
+  // if encadeado ou aninhado 
+
+  let idade = 99;
+  if(idade<= 13){
+    console.log("É uma criança")
+  } else if(idade>13 && idade <= 18){
+    console.log("É um adolescente")
+  }else if (idade>18 && idade <=59){
+    console.log("É um adulto")
+  } else{
+    console.log("É um idoso")
+  }
+
+  // switch case 
+
+  let times="Flamengo"; 
+  switch(times){
+    case "Santos": 
+      console.log("Um time idoso")
+      break; 
+    case "São Paulo": 
+      console.log*"Time afeminado"
+      break; 
+    case "Palmeiras":
+      console.log("Time gigante")
+    case "Corinthians": 
+      console.log("Time das galinhas")
+      break;
+    case "Flamengo":
+      console.log("Time do cheirinho")
+      break;
+    default: 
+      console.log("Time pior que a seleção brasileira")
+  }
+
+  //condição ternaria ( ? = if e : = else)
+
+  let salario =100; 
+  let resultado = salario ==100 ? "Salario certo" : "Salario errado"
+  console.log(resultado)
+
+  let usuario="Fiap";
+  let userLogado= usuario === "Fiap" ? "Logado com sucesso" : "Usuario inválido"
+  console.log(userLogado)
+
+  function verificarParImpar(numero){
+    return numero % 2 === 0 ? "Par" : 'Impar';
+  }
+  console.log(verificarParImpar(17))
