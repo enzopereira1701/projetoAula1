@@ -93,66 +93,90 @@
 // ESTRUTURA CONDICIONAL 
 
 // if
-if(true){
-  console.log("é verdadeiro")
+// if(true){
+//   console.log("é verdadeiro")
+// }
+
+// //if else
+
+// let nome = "Fiap"
+
+//   if(nome=="Fiap"){
+//     console.log("Nome verdadeiro")
+//   }else{
+//     console.log("Nome falso")
+//   }
+
+//   // if encadeado ou aninhado 
+
+//   let idade = 99;
+//   if(idade<= 13){
+//     console.log("É uma criança")
+//   } else if(idade>13 && idade <= 18){
+//     console.log("É um adolescente")
+//   }else if (idade>18 && idade <=59){
+//     console.log("É um adulto")
+//   } else{
+//     console.log("É um idoso")
+//   }
+
+//   // switch case 
+
+//   let times="Flamengo"; 
+//   switch(times){
+//     case "Santos": 
+//       console.log("Um time idoso")
+//       break; 
+//     case "São Paulo": 
+//       console.log*"Time afeminado"
+//       break; 
+//     case "Palmeiras":
+//       console.log("Time gigante")
+//     case "Corinthians": 
+//       console.log("Time das galinhas")
+//       break;
+//     case "Flamengo":
+//       console.log("Time do cheirinho")
+//       break;
+//     default: 
+//       console.log("Time pior que a seleção brasileira")
+//   }
+
+//   //condição ternaria ( ? = if e : = else)
+
+//   let salario =100; 
+//   let resultado = salario ==100 ? "Salario certo" : "Salario errado"
+//   console.log(resultado)
+
+//   let usuario="Fiap";
+//   let userLogado= usuario === "Fiap" ? "Logado com sucesso" : "Usuario inválido"
+//   console.log(userLogado)
+
+//   function verificarParImpar(numero){
+//     return numero % 2 === 0 ? "Par" : 'Impar';
+//   }
+//   console.log(verificarParImpar(17))
+
+// ESTRUTURA DE REPETIÇÂO (laço de repetição) 
+// for - estrutura de repetição utilizada quando sabemos previamente
+//quantas vezes o código vai ser executado (declaração, operação e implemento)
+for (let i = 1; i<=5; i++){
+console.log("Número" , i)
 }
 
-//if else
+// for para array 
+const linguagens = ["Java", "Python", "cs", "Php"]
 
-let nome = "Fiap"
+for (let i=0; i <linguagens.length; i++){
+  console.log("Linguagens", i, ".", linguagens[i]);
+}
 
-  if(nome=="Fiap"){
-    console.log("Nome verdadeiro")
-  }else{
-    console.log("Nome falso")
-  }
+const tecnologias = ["Js", "Html", "css"]
+for (const tech of tecnologias){
+  console.log("Estudando", tech)
+}
 
-  // if encadeado ou aninhado 
-
-  let idade = 99;
-  if(idade<= 13){
-    console.log("É uma criança")
-  } else if(idade>13 && idade <= 18){
-    console.log("É um adolescente")
-  }else if (idade>18 && idade <=59){
-    console.log("É um adulto")
-  } else{
-    console.log("É um idoso")
-  }
-
-  // switch case 
-
-  let times="Flamengo"; 
-  switch(times){
-    case "Santos": 
-      console.log("Um time idoso")
-      break; 
-    case "São Paulo": 
-      console.log*"Time afeminado"
-      break; 
-    case "Palmeiras":
-      console.log("Time gigante")
-    case "Corinthians": 
-      console.log("Time das galinhas")
-      break;
-    case "Flamengo":
-      console.log("Time do cheirinho")
-      break;
-    default: 
-      console.log("Time pior que a seleção brasileira")
-  }
-
-  //condição ternaria ( ? = if e : = else)
-
-  let salario =100; 
-  let resultado = salario ==100 ? "Salario certo" : "Salario errado"
-  console.log(resultado)
-
-  let usuario="Fiap";
-  let userLogado= usuario === "Fiap" ? "Logado com sucesso" : "Usuario inválido"
-  console.log(userLogado)
-
-  function verificarParImpar(numero){
-    return numero % 2 === 0 ? "Par" : 'Impar';
-  }
-  console.log(verificarParImpar(17))
+const carros = {marca:"Volks", modelo:"Kombi", ano:1972}
+for (let dados in carros){
+  console.log(dados, ":", carros[dados])
+}
